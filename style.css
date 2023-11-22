@@ -46,7 +46,28 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-    height: 200px;
+    height: 100px; 
     z-index: 1;
     border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#socialNetwork ul{
+    display: flex;
+    list-style: none;
+    /* flex-direction: column; */
+}
+#socialNetwork img{
+    height: 25px;
+    margin-right: 25px;
+}
+#creatorText a{
+    color: black;
+}
+.fa-solid{
+    color: red;
+} 
+.fa-heart{
+    color: red;
 }
