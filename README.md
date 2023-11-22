@@ -2,7 +2,7 @@
 
 ## Description
 Planète Running est un site dédié aux coureurs, offrant une gamme d'outils et de fonctionnalités pour améliorer l'expérience de course à pied.
-Projet réaliser durant ma reconversion professionnelle de Développeur Web et Web Mobile au sein du Centre Militaire de Formation Professionnelle.
+Projet réalisé durant ma reconversion professionnelle de Développeur Web et Web Mobile au sein du Centre Militaire de Formation Professionnelle.
 
 ## Fonctionnalités
 
