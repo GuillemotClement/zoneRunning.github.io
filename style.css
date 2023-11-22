@@ -1,54 +1,110 @@
+
+:root{
+    --textFont: cambria, sans-serif;
+    --titleFont: 'century gothic', sans-serif;
+    --colorTextLight: #00233D;
+    --colorSeparatorLight: #8EC8F6;
+    --colorBackgroundLight: #DEE6F2;
+    --colorSolidBackgroundLight: #0090FF;
+    --colorPrimaryLight: #0091FF;
+    --colorSecondaryLight: #8ACAFF;
+    --colorAccentLight: #00478F;
+    --colorTextDark: #C2E5FF;
+    --colorSeparatorLight: #205D9E;
+    --colorBackgroundDark: #0D1521;
+    --colorSolidBackgroundDark: #0090FF;
+    --colorPrimaryDark: #0091FF;
+    --colorSecondaryDark: ##004175;
+    --colorAccentDark: #70B8FF;
+}
+
 *{
     box-sizing: border-box;
 }
 html{
     width: 100%;
+    background-color: var(--colorBackgroundLight);
+    color: var(--colorTextLight);
+    text-align: center;
 }
 /* HEADER */
 header{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--colorSeparatorLight);
+    background-color: var(--colorSolidBackgroundLight);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
     opacity: 1;
-    background-color: aqua;
-    height: 50px;
+    /* background-color: aqua; */
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img {
+    height: 80px;
+}
+#profilPicture{
+    border-radius: 50%;
 }
 nav ul{
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 nav li{
     margin-right: 1.5rem;
 }
 nav a {
     color: black;
+    font-family: var(--titleFont);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 5px;
+}
+nav a:hover{
+    color: red;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
 }
 
 /* ************************************* */
 /* MAIN */
-
 main{
     height: 1500px;
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
 }
+h1 {
+    font-family: var(--titleFont);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 footer{
-    background-color: aqua;
+    border-bottom: 1px solid var(--colorSeparatorLight);
+    background-color: var(--colorSolidBackgroundLight);
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     height: 100px; 
     z-index: 1;
-    border-top: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,4 +126,7 @@ footer{
 } 
 .fa-heart{
     color: red;
+}
+footer p {
+    text-transform: uppercase;
 }
